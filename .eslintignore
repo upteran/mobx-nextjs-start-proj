@@ -1,0 +1,6 @@
+lib/*
+_docs/*
+.gitlab
+.next/*
+debug/*
+node_modules/*

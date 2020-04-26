@@ -1,0 +1,43 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react", "prettier/standard"],
+  "plugins": ["react", "prettier", "standard", "react-hooks"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-no-bind": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/prefer-stateless-function": [1, { "ignorePureComponents": true  }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "invalidHref", "preferButton" ]
+    }],
+    "react/no-danger": "off",
+    "no-invalid-this": "off",
+    "jsx-props-no-spreading": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/state-in-constructor": "off",
+    "react/static-property-placement": "off"
+  },
+  "globals": {
+    "NODE_ENV": true,
+    "document": true,
+    "window": true
+  }
+}
